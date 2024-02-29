@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Van turismo</title>
+    <link rel="stylesheet" href="estilo/style.css">
+    <script src="script/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+    <link class="vapt-vupt" rel="icon" type="image/png" href="imagens/logo-van-tur.png">
+</head>
+<body>
+    <div class="infor-pre-header">
+        <img src="imagens/email.png" alt="">
+        <p>van.turismo.ceara@gmail.com</p>
+        <p>|</p>
+        <p>cnpj: 48.319.135/0001-40</p>
+    </div>
+    <header>
+        <div class="img-logo-header">
+            <img id="logo" src="imagens/logo-van-tur.png" alt="">
+        </div>
+         
+        <div class="infor-header">
+            <p id="inicio">Início</p>
+            <p><a href="#passeios">Passeios</a></p>
+            <p><a href="#sobre-nos">Sobre nós</a></p>
+            <p><a href="#galeria">Galeria</a></p>
+            <p id="contatos">Entre em contato</p>
+        </div>
+    </header>
+
+    <section class="slider">
+        <div class="container-slider">
+            <input type="radio" name="btn-radio" id="radio1">
+            <input type="radio" name="btn-radio" id="radio2">
+            <input type="radio" name="btn-radio" id="radio3">
+            
+            <div class="slide first">
+                <img src="imagens/vapo.jpeg" alt="">
+            </div>
+            <div class="slide">
+                <img src="imagens/vapo2.jpeg" alt="">
+            </div>
+            <div class="slide">
+                <img src="imagens/vapo3.jpeg" alt="">
+            </div>
+
+            <div class="nav-manual">
+                <img class="nav" src="imagens/vapo.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <div class="icons">
+        <div class="icon">
+            <img src="imagens/carteira.png" style="height: 30px; width: 30px;" alt="">
+            <h4>Melhor custo beneficio</h4>
+            <p>garanta os melhores preços</p>
+        </div>
+        <div class="icon">
+            <img src="imagens/pin.png" style="height: 30px; width: 30px;" alt="">
+            <h4>Escolha seu destino</h4>
+            <p>garanta sua viagem dos sonhos</p>
+        </div>
+        <div class="icon">
+            <img src="imagens/fones-de-ouvido.png" style="height: 30px; width: 30px;" alt="">
+            <h4>Atendimento 11/7</h4>
+            <p>Atendimento de 7 ás 18 horas</p>
+        </div>
+    </div>
+    <main>
+        <div id="passeios" class="conteiner-passeios">
+            <div>
+            <h2>Nossos passeios</h2>
+            </div>
+            
+            <div class="passeios">
+
+                <div class="pass" onclick="redirect('jericoacoara.html')">
+                        <img class="img-pass" src="imagens/jericoacoara.jpg">
+                        <h4>Jericoacoara</h4>
+                        <p>Descubra Jericoacoara, onde dunas se encontram com o mar. Praias incríveis, esportes aquáticos emocionantes e pôr do sol deslumbrante. Uma jornada única aguarda</p>
+                    <div class="valor">
+                        <h2>R$220,00</h2>
+                    </div>
+                </div>
+                
+                <div class="pass" onclick="redirect('icarai.html')">
+                        <img class="img-pass" src="imagens/praia-icarai-de-amontada.webp">
+                        <h4>Icaraizinho de Amontada</h4>
+                        <p>Descubra a serenidade de Icaraízinho de Amontada, onde o mar encontra a tranquilidade. Com praias serenas, brisas suaves e uma atmosfera relaxante, este destino promete uma escapada inesquecível</p>
+                    <div class="valor">
+                        <h2>R$220,00</h2>
+                    </div>
+                </div>
+
+                <div onclick="redirect('mundau.html')" class="pass">
+                        <img class="img-pass" src="imagens/mundau.jpeg">
+                        <h4>Mundaú</h4>
+                        <p>Descubra Mundau, onde o mar encontra a paz. Com praias serenas, brisas suaves e uma atmosfera tranquila, este destino se torna um refúgio inesquecível para relaxamento à beira-mar</p>
+                    <div class="valor">
+                        <h2>R$85,00</h2>
+                    </div>
+                </div>
+
+                <div onclick="redirect('lagoinha.html')" class="pass">
+                        <img class="img-pass" src="imagens/lagoinha.jpg">
+                        <h4>Lagoinha</h4>
+                        <p>Descubra a encantadora Lagoínha, onde a lagoa se encontra com a serenidade. Paisagens pitorescas, águas tranquilas e um ambiente acolhedor criam um refúgio perfeito para momentos inesquecíveis</p>
+                    <div class="valor">
+                        <h2>R$80,00</h2>
+                    </div>
+                </div>
+
+                <div onclick="redirect('flexeiras.html')" class="pass">
+                        <img class="img-pass" src="imagens/flexeiras.jpeg">
+                        <h4>Flexeiras</h4>
+                        <p>Explore Flexeiras, onde o mar revela seus encantos. Praias sedutoras, brisas suaves e uma atmosfera relaxante tornam este destino uma escolha irresistível para uma experiência à beira-mar</p>
+                    <div class="valor">
+                        <h2>R$85,00</h2>
+                    </div>
+                </div>
+
+                <div onclick="redirect('cumbuco.html')" class="pass">
+                        <img class="img-pass" src="imagens/cumbuco.jpeg">
+                        <h4>Cumbuco</h4>
+                        <p>Descubra Cumbuco, onde a diversão encontra o mar. Com dunas emocionantes, esportes radicais e praias encantadoras, este destino é perfeito para quem busca aventuras inesquecíveis à beira-mar</p>
+                    <div class="valor">
+                    <h2>R$50,00</h2>
+                    </div>
+                </div>
+
+                <div onclick="redirect('barra-nova.html')" class="pass">
+                        <img class="img-pass" src="imagens/barra nova.jpeg">
+                        <h4>Barra Nova</h4>
+                        <p>Explore Barra Nova, onde o mar proporciona momentos de tranquilidade. Praias serenas, brisas suaves e uma atmosfera relaxante criam um refúgio encantador para uma escapada à beira-mar</p>
+                    <div class="valor">
+                    <h2>R$75,00</h2>
+                    </div>
+                </div>
+
+                <div onclick="redirect('passeio.html')" class="pass">
+                        <img class="img-pass" src="imagens/passeio.jpg">
+                        <h4>Passeio 3 em 1</h4>
+                        <p>Morro Branco, Praia de fontes e Canoa quebrada em 1 dia caminhada pelo labirinto de areias coloridas e parada para fotos na praia das fontes. Aproveite desse momento com a equipe Van Turismo</p>
+                    <div class="valor">
+                    <h2>R$95,00</h2>
+                    </div>
+                </div>
+
+                <div onclick="redirect('beachPark.html')" class="pass">
+                        <img class="img-pass" src="imagens/beack park.jpg">
+                        <h4>Beach Park</h4>
+                        <p>Aproveite o Beach Park, onde o sol se encontra com a diversão. Toboáguas emocionantes, piscinas relaxantes e praias ensolaradas para momentos memoráveis</p>
+                    <div class="valor">
+                    <h2>R$50,00</h2>
+                    </div>
+                </div>
+
+                <div onclick="redirect('aguasBelas.html')" class="pass">
+                        <img class="img-pass" src="imagens/aguas belas.jpg">
+                        <h4>Águas Belas</h4>
+                        <p>Descubra a serenidade de Águas Belas, onde o rio encontra a beleza. Praias tranquilas, brisas suaves e uma atmosfera encantadora oferecem um refúgio relaxante à beira da água</p>
+                    <div class="valor">
+                    <h2>R$70,00</h2>
+                    </div>
+                </div>
+
+                <div onclick="redirect('morroBranco.html')" class="pass">
+                        <img class="img-pass" src="imagens/morro branco.jpeg">
+                        <h4>Morro Branco/Fontes</h4>
+                        <p>Morro Branco e Fontes, onde a natureza se revela em sua plenitude. Falésias imponentes, fontes cristalinas e praias deslumbrantes se combinam para criar um cenário cativante à beira-mar</p>
+                    <div class="valor">
+                    <h2>R$80,00</h2>
+                    </div>
+                </div>
+
+                <div onclick="redirect('canoa.html')" class="pass">
+                        <img class="img-pass" src="imagens/canoa quebrada.jpg">
+                        <h4>Canoa Quebrada</h4>
+                        <p>Descubra Canoa Quebrada, onde as cores do céu se encontram com o mar. Com falésias dramáticas, areias douradas e uma atmosfera vibrante, este destino promete uma experiência única à beira-mar</p>
+                    <div class="valor">
+                    <h2>R$85,00</h2>
+                    </div>
+            </div>
+
+           </div>
+        </div>
+    </main>
+
+    <div class="galeria" id="galeria">
+        <h1>Galeria</h1>
+        <div class="fotos-galeria">
+            
+        </div>
+    </div>
+
+
+    <div id="sobre-nos" class="sobre-nos">
+        <h1>Sobre nós</h1>
+        <div class="texto-sobre-nos">
+        <p>Bem-vindo à nossa agência de turismo receptivo em Fortaleza, Ceará, onde o sol e as praias deslumbrantes se unem para criar experiências inesquecíveis. Com uma paixão por mostrar o melhor da nossa região, oferecemos roteiros personalizados, destacando as belezas naturais, cultura vibrante e hospitalidade única de Fortaleza. Permita-nos guiá -lo por paisagens deslumbrantes, atividades emocionantes e momentos memoráveis en -quanto exploramos juntos o paraíso que é o nordeste brasileiro. Seja bem-vindo a uma jornada de descobertas sob o sol radiante de Fortaleza.</p>
+        </div>
+        <p>Gerencia:</p>
+        <p>Vanessa Silva</p>
+        <p>Suzyele Barros</p>
+        <button id="btn-entrar-ctt">Entre em contato</button>
+    </div>
+
+    <footer>
+        <div class="img-infor">
+            <img id="logo" src="imagens/logo-van-tur.png" alt="" >
+            <ul>
+                <li>Rua chico xavier, Barra do ceará</li>
+                <li>Fortaleza-CE - CEP 60332320</li>
+                <li>+55 (85) 98606-1468</li>
+                <li>+55 (85) 98609-9085</li>
+            </ul>
+        </div>
+
+        <div class="redes-sociais">
+            <div>
+                <h3>Conheça Van turismo nas redes sociais</h3>
+            </div>
+            <div class="img-flex">
+                <img id="insta" src="imagens/icons8-instagram.svg">
+                <img id="face" src="imagens/icons8-facebook.svg">
+                <img id="zap" src="imagens/icons8-whatsapp.svg">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

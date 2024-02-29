@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Van turismo-Lagoinha</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap');
+        #container-whats{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #link-whats{
+            cursor: pointer;
+            border-radius: 40px;
+            width: 50%;
+            height: 40px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            background-color: rgb(97, 238, 97);
+            color: white;
+            
+        }
+        
+        #link-whats:hover{
+            background-color: rgb(56, 187, 56);
+        }
+
+        #chat{
+            font-weight: bold;
+            font-family: sans-serif;
+            margin: 10px;
+        }
+        
+        #link-whats img{
+            height: 30px;
+            width: 30px;
+        }
+        
+        #link-whats p{
+            font-size: 15px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', 'sans-serif';
+        }
+        header{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(104, 184, 250);
+        }
+        header img{
+            border-radius: 50%;
+            height: 80px;
+            width: 80px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        header .infor-header{
+            display: flex;
+        }
+        header p{
+            margin: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            color: white;
+        }
+        header p:hover{
+            color: whitesmoke;
+        }
+        
+        main{
+            margin: 2% 0% 5%;
+            display: flex;
+        }
+        
+        main .informacoes{
+            width: 60%;
+            height: auto;
+        }
+
+        main .descricao{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+        }
+
+        main .compra{
+            height: auto;
+            width: 40%;
+        }
+
+        .slider{
+            overflow: hidden;
+            margin: 20px;
+        }
+
+        .conteiner-slider{
+            width: 400%;
+            display: flex;
+            height: auto;
+        }
+
+        .slider input{
+            display: none;
+        }
+
+        .slide{
+            width: 25%;
+            height: auto;
+            position: relative;
+            text-align: center;
+            transition: 1s;
+        }
+
+        .slide img{
+            width: 100%;
+            border-radius: 20px;
+        }
+        
+        .compra{
+            display: flex;
+            margin:20px;
+            flex-direction: column;
+        }
+
+        .compra h1{
+        margin: 10px;
+        }
+
+        .btn-comprar{
+            border: 2px solid black;
+            cursor: pointer;
+            width: 40%;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            margin: 10px 0px 0px;
+            font-weight: bold;
+        }
+
+        .btn-comprar:hover{
+         background-color: black;
+         color: white;    
+        }
+
+        footer{
+            background-color: steelblue;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .img-infor{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 50px;
+        }
+        
+        li{
+            list-style-type: none;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .img-infor img {
+            height: 100px;
+            width: 100px ;
+            margin: 10px;
+            border-radius: 50px;
+            cursor:pointer;
+        }
+
+        .redes-sociais{
+            display: flex;
+            flex-direction: column;
+            margin: 50px;
+            
+        }
+        
+        .redes-sociais h3{
+            color: white;
+        }
+        
+        .img-flex{
+            display: flex;
+            justify-content: center;
+        }
+        .redes-sociais img{
+            padding: 10px;
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+        }
+        @media screen and (max-width: 525px) {
+
+        .img-logo-header img{
+            margin: 10px 0px 0px;
+        }
+        #link-whats{
+            height: 70px;
+            width: 60%;
+        }
+        
+        .infor-pre-header{
+            display: none;
+        }
+        
+        header{
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .infor-header p{
+            margin: 5px;
+            font-size: 13px;
+        }
+        
+        .icons{
+            flex-direction: column;
+            margin: 30px;
+        }
+        
+        .icons .icon{
+            margin: 30px;
+        }
+       
+        .pass{
+            flex-direction: column;
+            
+        }
+        
+        .sobre-nos button{
+            width:50%;
+            height: 50px;
+        }
+        
+        footer{
+            flex-direction: column;
+        }
+        
+        .img-infor{
+            flex-direction: column;
+        }
+
+        main{
+            flex-direction: column;
+        }
+
+        main .informacoes{
+            width: 100%;
+            height: auto;
+        }
+
+        .btn-comprar{
+            width: 50%;
+        }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img onclick="redirect('index.html')" src="imagens/logo-van-tur.png" alt="">
+        <div class="infor-header">
+            <p onclick="redirect('index.html')">Inicio</p>
+            <p onclick="redirect('index.html')">Passeios</p>
+            <p onclick="redirect('index.html')">Sobre-nós</p>
+            <p onclick="redirect('index.html')">Galeria</p>
+            <P onclick="redirect('index.html')">Entre em contato</P>
+        </div>
+    </header>
+
+    <main>
+        <div class="informacoes">
+            <div class="slider">
+                <div class="conteiner-slider">
+                <input type="radio" name="btn-radio" id="radio1">
+                <input type="radio" name="btn-radio" id="radio2">
+                <input type="radio" name="btn-radio" id="radio3">
+
+                <div class="slide first">
+                    <img src="imagens/jeript1.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="imagens/jeript2.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="imagens/jeript3.jpg" alt="">
+                </div>
+
+
+                </div>
+            </div>
+
+            <div class="descricao">
+                <h2>Descrição do passeio</h2>
+                <p></p>
+            </div>
+        </div>
+        <div class="compra">
+            
+                <h1>Compre seu passeio aqui!</h1>
+                <p>Fale com uma de nossas Gerentes e garanta seu passeio agora.</p>
+                <p class="btn-comprar">Comprar</p>
+            
+        </div>
+    </main>
+
+    <footer>
+        <div class="img-infor">
+            <img onclick="redirect('index.html')" id="logo" src="imagens/logo-van-tur.png" alt="" >
+            <ul>
+                <li>Rua chico xavier, Barra do ceará</li>
+                <li>Fortaleza-CE - CEP 60332320</li>
+                <li>+55 (85) 98606-1468</li>
+                <li>+55 (85) 98609-9085</li>
+            </ul>
+        </div>
+
+        <div class="redes-sociais">
+            <div>
+                <h3>Conheça Van turismo nas redes sociais</h3>
+            </div>
+            <div class="img-flex">
+                <img onclick="redirect('https://www.instagram.com/van_turismo_ceara/')" id="insta" src="imagens/icons8-instagram.svg">
+                <img onclick="redirect('https://www.facebook.com/VanTurismoCeara')" id="face" src="imagens/icons8-facebook.svg">
+                <img onclick="redirect('https://wa.me/986061468')" id="zap" src="imagens/icons8-whatsapp.svg">
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let comprar = document.querySelector(".btn-comprar").addEventListener("click", ()=>{
+            Swal.fire({
+             title: "Otima escolha!",
+             icon: "success",
+             html:  "<p>Informe seu pedido a uma de nossas vendedoras e finalize seu pedido.</p>" + "<div id='container-whats'> <p id='chat'> Chat 1 </p> <div class='chat1' id='link-whats'><img src='imagens/icons8-whatsapp.svg'> <p>(85) 98606-1468</p></div> <p id='chat'> Chat 2 </p> <div class='chat2' id='link-whats'><img src='imagens/icons8-whatsapp.svg'> <p>(85) 98609-9085</p></div> </div>",
+             showCancelButton: true,
+             showConfirmButton: false,
+             cancelButtonText: 'Cancelar',
+             cancelButtonColor: '#d33',
+             didOpen: () => {
+                 let chat1 = document.querySelector(".chat1")
+                 chat1.addEventListener("click", ()=>{
+                     window.location.href = "https://wa.me/986061468"
+                 })
+    
+                 let chat2 = document.querySelector(".chat2")
+                 chat2.addEventListener("click", ()=>{
+                     window.location.href = "https://wa.me/986099085"
+                 })
+             }
+           });
+        })
+
+let cont = 1
+
+
+let radio1 = document.getElementById("radio1")
+let radio2 = document.getElementById("radio2")
+let radio3 = document.getElementById("radio3")
+let first = document.querySelector(".first")
+
+setInterval(() =>{
+    cont++
+
+    if(cont > 3){
+        cont = 1
+    }
+
+    changeImage()
+}, 3000)
+
+function verify(){
+    if(cont == 1){
+        radio1.checked = true
+    }else if(cont == 2){
+        radio2.checked = true
+    }else if(cont == 3){
+        radio3.checked = true
+    }
+}
+
+function changeImage(){
+ verify()
+    if(radio1.checked){
+        first.style.marginLeft = "0%"
+    }else if(radio2.checked){
+        first.style.marginLeft = "-25%"
+    }else if(radio3.checked){
+        first.style.marginLeft = "-50%"
+    }   
+}
+
+function redirect(link){
+    window.location.href = link
+}
+    </script>
+</body>
+</html>

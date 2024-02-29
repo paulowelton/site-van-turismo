@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family:'Poppins', 'sans-serif';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: white;
+}
+
+.infor-pre-header{
+    background-color: rgb(139, 173, 199);
+    color: black;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.infor-pre-header img{
+    height: 20px;
+    width: 20px;
+}
+
+.infor-pre-header p{
+    font-size: 15px;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(104, 184, 250);
+}
+
+.img-logo-header img {
+    padding: 0px;
+    height: 80px;
+    width: 80px ;
+    margin: 10px;
+    margin-right: 70px;
+    border-radius: 50px;
+    cursor:pointer;
+}
+
+.slider{    
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 !important;
+    overflow: hidden;
+}
+.container-slider{
+    width: 400%;    
+    height: auto;
+    display: flex;
+}
+
+.slider input{
+    display: none;    
+}
+
+.slide{
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+}
+
+.slide img{
+    width: 100%;
+}
+
+.nav-manual{
+    position: absolute;
+    width: 100%;
+    color:white;
+    margin-top: 18%;
+    
+    font-size: 400%;
+    justify-content: center;
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+}
+
+.nav-manual img{
+    height:8%;
+    width:8%;
+} 
+
+#container-whats{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#link-whats{
+    cursor: pointer;
+    border-radius: 40px;
+    width: 50%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: rgb(97, 238, 97);
+    color: white;
+    
+}
+
+#link-whats:hover{
+    background-color: rgb(56, 187, 56);
+}
+
+#chat{
+    font-weight: bold;
+    font-family: sans-serif;
+    margin: 10px;
+}
+
+#link-whats img{
+    height: 30px;
+    width: 30px;
+}
+
+#link-whats p{
+    font-size: 15px;
+}
+
+.infor-header{
+    display: flex;
+}
+
+.infor-header p {
+    margin: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', 'sans-serif';
+    font-weight: bold;
+    color: white;
+}
+
+.infor-header a{
+    text-decoration: none;
+    color: white;
+}
+
+.infor-header a:hover{
+    color: whitesmoke; 
+}
+
+.infor-header p:hover{
+    color: whitesmoke;  
+}
+
+
+.icons{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10%;
+}
+
+.icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon img,h4,p{
+    padding: 5px;
+}
+
+.conteiner-passeios{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner-passeios h2{
+    margin: 30px;
+}
+
+.passeios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.img-pass{
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius:20px;
+    
+}
+
+
+.pass {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    background-color: white;
+    margin: 20px;
+    border-radius: 20px;
+    width: 29%;
+    height: 100%;
+    box-shadow: 0 0 10px rgba(104, 103, 103, 0.3);
+}
+
+.pass:hover{
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+     transform: translateY(-10px); 
+     transition: 0.5s;
+}
+
+.pass p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: gray;
+}
+
+.valor{
+    display: flex;
+    justify-content: center;
+}
+
+
+.valor h2{
+    font-weight: 900;
+    color: rgb(45, 105, 153);
+}
+
+.galeria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10% 0% 10%;
+}
+
+.sobre-nos{
+    margin: 50px 0px 50px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+.texto-sobre-nos{
+    margin: 20px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sobre-nos button{margin: 10px;    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 20%;
+    height: 35px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.sobre-nos button:hover{
+    background-color: black;
+    color: white;
+}
+
+footer{
+    background-color: steelblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-infor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px;
+}
+
+li{
+    list-style-type: none;
+    color: white;
+    font-weight: bold;
+}
+
+.img-infor img {
+    height: 100px;
+    width: 100px ;
+    margin: 10px;
+    border-radius: 50px;
+    cursor:pointer;
+}
+
+.redes-sociais{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    
+}
+
+.redes-sociais h3{
+    color: white;
+}
+
+.img-flex{
+    display: flex;
+    justify-content: center;
+}
+.redes-sociais img{
+    padding: 10px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+/* monitores menores */
+@media screen and (max-width: 936px) {
+    .pass{
+        width: 40%;
+    }
+}
+/* monitores muito pequeno / tablets */
+@media screen and (max-width: 625px) {
+    .pass{
+        width: 100%;
+        flex-direction: column;
+    }
+}
+/* celulares */
+@media screen and (max-width: 525px) {
+
+    .img-logo-header img{
+        margin: 10px 0px 0px;
+    }
+    #link-whats{
+        height: 70px;
+        width: 60%;
+    }
+
+    .infor-pre-header{
+        display: none;
+    }
+
+    header{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .infor-header p{
+        margin: 5px;
+        font-size: 13px;
+    }
+
+    .icons{
+        flex-direction: column;
+        margin: 30px;
+    }
+
+    .icons .icon{
+        margin: 30px;
+    }
+
+    
+
+    .pass{
+        flex-direction: column;
+        
+    }
+
+    .sobre-nos button{
+        width:50%;
+        height: 50px;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+    .img-infor{
+        flex-direction: column;
+    }
+}
+
+
